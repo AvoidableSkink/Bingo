@@ -6,22 +6,34 @@
 
 Deck::Deck(int cardSize, int cardCount, int numberMax)
 {
-    
+    nextID = 1;
+    numCards = cardCount;
+
+    myCards = new Card[cardCount];
+    for (int i = 0; i < cardCount; ++i) {
+        myCards[i] = Card(cardSize, numberMax, nextID);
+        nextID++;
+    }
 }
 
 Deck::~Deck()
 {
-    // TODO: Implement
+    delete [] myCards;
 }
 
 void Deck::print(std::ostream& out) const
 {
-    // TODO: Implement
+    for (int i = 0; i < numCards; ++i) {
+        myCards[i].print(out);
+    }
 }
 
 void Deck::print(std::ostream& out, int cardIndex) const
 {
-    // TODO: Implement
+    if (cardIndex > numCards)
+        return;
+    else
+        myCards[cardIndex - 1].print(out);
 }
 
 
