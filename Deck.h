@@ -23,6 +23,8 @@ public:
     void print(std::ostream& out) const;
     void print(std::ostream& out, int cardIndex) const;
 
+private:
+    int getNumCards() const;
 };
 
 #endif //BINGO_DECK_H

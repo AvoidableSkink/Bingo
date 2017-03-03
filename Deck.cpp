@@ -23,17 +23,21 @@ Deck::~Deck()
 
 void Deck::print(std::ostream& out) const
 {
-    for (int i = 0; i < numCards; ++i) {
+    for (int i = 0; i < getNumCards(); ++i) {
         myCards[i].print(out);
     }
 }
 
 void Deck::print(std::ostream& out, int cardIndex) const
 {
-    if (cardIndex > numCards)
+    if (cardIndex > getNumCards())
         return;
     else
         myCards[cardIndex - 1].print(out);
+}
+
+int Deck::getNumCards() const {
+    return numCards;
 }
 
 
