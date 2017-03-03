@@ -7,6 +7,7 @@
 
 
 class CardTester {
+public:
     void testCard();
 };
 

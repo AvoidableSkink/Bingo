@@ -22,12 +22,14 @@ Card::Card(int s, int maxNum, int m_id) {
 }
 
 Card::~Card() {
-    if (this->getSize() != getSize())
-    {
-        for (int i=0; i < getSize(); i++)
-            delete myNumbers[i];
-        delete[] myNumbers;
-    }
+    //when the destructor is called to destroy the card made with the default constructor
+    //when i make the array of Cards, it messes with the card that replaced it
+    //i cannot figure out how to get it to execute the following code only when it is
+    //not deleting the cards made with the default constructor
+
+//    for (int i=0; i < getSize(); i++)
+//        delete myNumbers[i];
+//    delete[] myNumbers;
 }
 
 //return a shuffled vector of ints ranging from 1 to maxNum

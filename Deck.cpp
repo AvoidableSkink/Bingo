@@ -11,7 +11,7 @@ Deck::Deck(int cardSize, int cardCount, int numberMax)
 
     myCards = new Card[cardCount];
     for (int i = 0; i < cardCount; ++i) {
-        myCards[i] = Card(cardSize, numberMax, nextID);
+        myCards[i] = Card(cardSize, numberMax, getNumCards());
         nextID++;
     }
 }

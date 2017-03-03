@@ -13,6 +13,7 @@ private:
     int maxNumber;
     int id;
 
+    int test;
     int** myNumbers;
 
 public:
