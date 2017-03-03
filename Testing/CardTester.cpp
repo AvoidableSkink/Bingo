@@ -5,5 +5,5 @@
 #include "CardTester.h"
 
 void CardTester::testCard() {
-
+    //what am i supposed to test?
 }

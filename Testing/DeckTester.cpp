@@ -5,5 +5,5 @@
 #include "DeckTester.h"
 
 void DeckTester::testDeck() {
-
+    //what am i supposed to test?
 }
