@@ -62,7 +62,8 @@ void Card::print(std::ostream& out) {
             count++;
         }
         out << std::endl;
-    }}
+    }
+}
 
 int Card::getSize() const {
     return size;
