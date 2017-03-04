@@ -31,6 +31,8 @@ Card::~Card() {
     //i cannot figure out how to get it to execute the following code only when it is
     //not deleting the cards made with the default constructor
 
+    //at least i think that is what is happening
+
 //    for (int i=0; i < getSize(); i++)
 //        delete myNumbers[i];
 //    delete[] myNumbers;
