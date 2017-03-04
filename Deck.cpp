@@ -6,6 +6,10 @@
 
 Deck::Deck(int cardSize, int cardCount, int numberMax)
 {
+    if (cardSize < 3 || cardSize > 15)
+        return;
+
+    status = true;
     nextID = 1;
     numCards = cardCount;
 
@@ -40,5 +44,6 @@ int Deck::getNumCards() const {
     return numCards;
 }
 
-
-
+bool Deck::getStatus() const {
+    return status;
+}

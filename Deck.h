@@ -16,6 +16,7 @@ private:
     int numCards;
     Card* myCards;
 
+    bool status = false;
 public:
     Deck(int cardSize, int cardCount, int numberMax);
     ~Deck();
@@ -23,8 +24,11 @@ public:
     void print(std::ostream& out) const;
     void print(std::ostream& out, int cardIndex) const;
 
+    bool getStatus() const;
+
 private:
     int getNumCards() const;
 };
 
 #endif //BINGO_DECK_H
+
