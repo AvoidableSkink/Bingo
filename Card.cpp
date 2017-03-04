@@ -11,7 +11,7 @@ Card::Card() {}
 Card::Card(int s, int maxNum, int m_id) {
     if (maxNum < s*s)
         return;
-    else {
+
         status = true;
         size = s;
         maxNumber = maxNum;
@@ -23,7 +23,6 @@ Card::Card(int s, int maxNum, int m_id) {
         }
 
         fill();
-    }
 }
 
 Card::~Card() {
