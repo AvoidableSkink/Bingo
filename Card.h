@@ -13,15 +13,15 @@ private:
     int maxNumber;
     int id;
 
-    int test;
     int** myNumbers;
-
+    bool status = false;
 public:
     Card();
     Card(int size, int maxNum, int id);
     ~Card();
 
     void print(std::ostream& out);
+    bool getStatus() const;
 
 private:
     int getSize() const ;

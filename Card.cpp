@@ -9,16 +9,21 @@
 Card::Card() {}
 
 Card::Card(int s, int maxNum, int m_id) {
-    size = s;
-    maxNumber = maxNum;
-    id = m_id;
+    if (maxNum < s*s)
+        return;
+    else {
+        status = true;
+        size = s;
+        maxNumber = maxNum;
+        id = m_id;
 
-    myNumbers = new int* [getSize()];
-    for (int i = 0; i < getSize(); ++i) {
-        myNumbers[i] = new int[getSize()];
+        myNumbers = new int* [getSize()];
+        for (int i = 0; i < getSize(); ++i) {
+            myNumbers[i] = new int[getSize()];
+        }
+
+        fill();
     }
-
-    fill();
 }
 
 Card::~Card() {
@@ -77,4 +82,8 @@ int Card::getMaxNumber() const {
 
 int Card::getID() const {
     return id;
+}
+
+bool Card::getStatus() const {
+    return status;
 }

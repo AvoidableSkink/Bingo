@@ -37,7 +37,7 @@ void MenuOptionTester::testConstructorAndGetter()
             std::cout << "Failure in constructor: unexpected value for getCommand" << std::endl;
             return;
         }
-m        if (option.getDescription()!="")
+            if (option.getDescription()!="")
         {
             std::cout << "Failure in constructor: unexpected value for getCommand" << std::endl;
             return;

@@ -7,9 +7,10 @@ set(SOURCE_FILES
             UserInterface.cpp UserInterface.h
             Deck.cpp Deck.h
             MenuOption.cpp MenuOption.h
-            Menu.cpp Menu.h)
+            Menu.cpp Menu.h
+            Card.cpp Card.h)
 
-add_executable(Bingo main.cpp ${SOURCE_FILES} Card.cpp Card.h)
+add_executable(Bingo main.cpp ${SOURCE_FILES} )
 
 set(TEST_FILES
         Testing/MenuTester.cpp Testing/MenuTester.h
