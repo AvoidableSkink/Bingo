@@ -7,7 +7,7 @@
 #include "../Card.h"
 
 void CardTester::testCard() {
-    std::cout << "Testing Constructor" << std::endl;
+    std::cout << "Test Suite: CardTester::testCard" << std::endl;
 
     std::cout << "Test case 1" << std::endl;
     Card card1(3, 10, 1);
